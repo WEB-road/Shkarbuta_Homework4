@@ -34,13 +34,30 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 @font-face {
     font-family: 'Playfair Display';
-    src: local('../fonts/PlayfairDisplay-Regular'), url('../fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+    src: url('../fonts/PlayfairDisplay-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
+}
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: light;
 }
 .head{
 	width: 1062px;
 	margin: 70px auto;
+}
+a{
+	color: #626262;
+	transition-property: font-size;
+	transition-duration: 1s;
+}
+a:hover{
+	transition-property: font-size;
+	transition-duration: 1s;
+	font-size: 150%;
+	color: black;
 }
 .title_row{
 	display: flex;
@@ -75,12 +92,13 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	margin: 0 auto;
 	max-width: 900px;
 }
-.card_1, .card_2, .card_3{
-	margin-top: 120px;
+.card_1, .card_2{
+	
 	max-width: 900px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 .photodiary, .comment, .lifestyle{
 	text-transform: uppercase;
@@ -90,6 +108,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	font-family: "Ubuntu";
 }
 .comment{
+	display: inline-block;
 	margin: 52px 0 15px 0;
 }
 .lifestyle{
@@ -114,8 +133,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	padding: 0 10px;
 }
 .card{
+	margin-top: 120px;
 	max-width: 420px;
 	overflow: hidden;
+	flex: 0 1 50%;
+	border 1px solid black;
 }
 .img_all{
 	max-width: 420px;
@@ -127,7 +149,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	bottom: 50px;
 }
 .mail{
-	margin: 120px 0 100px 0;
+	margin-top: 120px;
 	background-color: #f0f0f0;
 	display: flex;
 	flex-direction: column;
@@ -187,7 +209,6 @@ footer{
 .content{
 	font-size: 14px;
 	padding: 40px 20px;
-	color: #000000;
-	font-weight: 400;
+	font-weight: 700;
 	font-family: "Playfair Display";
 }
