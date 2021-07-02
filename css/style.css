@@ -50,20 +50,20 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 a{
 	color: #626262;
-	transition-property: font-size;
 	transition-duration: 1s;
 }
 a:hover{
-	transition-property: font-size;
+	/*transition-property: font-size;*/
 	transition-duration: 1s;
-	font-size: 150%;
-	color: black;
+	/*font-size: 150%;*/
+	color: white;
+	background-color: #626262;
+	/*transform: scale(1.5,1.5);*/
 }
 .title_row{
 	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
-	z-index: 1;
+	align-items: baseline;
 }
 .logo{
 	width: 119px;
@@ -72,7 +72,6 @@ a:hover{
 .nav{
 	width: 573px;
 	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
 }
 .top{
@@ -81,22 +80,13 @@ a:hover{
 	color: #626262;
 	font-weight: 400;
 	font-family: "Playfair Display";
-	padding-top: 10px;
-}
-.image{
-	position: relative;
-	bottom: 90px;
-	z-index: -1;
 }
 .container{
 	margin: 0 auto;
 	max-width: 900px;
 }
-.card_1, .card_2{
-	
-	max-width: 900px;
+.cards{
 	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
@@ -137,16 +127,11 @@ a:hover{
 	max-width: 420px;
 	overflow: hidden;
 	flex: 0 1 50%;
-	border 1px solid black;
 }
 .img_all{
 	max-width: 420px;
 	max-height: 280px;
 	overflow: hidden;
-}
-.img3{
-	position: relative;
-	bottom: 50px;
 }
 .mail{
 	margin-top: 120px;
@@ -174,10 +159,6 @@ a:hover{
 	height: 17px;
 	background-image: url(../img/send.png);
 	}
-.img5{
-	position: relative;
-	bottom: 260px;
-}
 .load{
 	max-width: 165px;
 	margin: 165px auto;
@@ -198,12 +179,10 @@ footer{
 	max-width: 980px;
 	display: flex;
 	justify-content: space-between;
-	flex-direction: row;
 	margin: 0 auto;
 }
 .l_nav{
 	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
 }
 .content{
