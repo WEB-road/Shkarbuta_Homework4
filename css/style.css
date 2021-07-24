@@ -48,17 +48,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	width: 1062px;
 	margin: 70px auto;
 }
-a{
-	color: #626262;
-	transition-duration: 1s;
+.hover{
+	transition: transform .2s ease-in-out;
 }
-a:hover{
-	/*transition-property: font-size;*/
-	transition-duration: 1s;
-	/*font-size: 150%;*/
-	color: white;
-	background-color: #626262;
-	/*transform: scale(1.5,1.5);*/
+.hover:hover{
+	transform: scale(1.5);
 }
 .title_row{
 	display: flex;
@@ -174,6 +168,9 @@ a:hover{
 footer{
 	background-color: #f0f0f0;
 	margin: 0 auto;
+}
+a{
+	color: #626262;
 }
 .l_container{
 	max-width: 980px;
